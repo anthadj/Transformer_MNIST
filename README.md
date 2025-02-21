@@ -1,3 +1,3 @@
-To run simply use
+To run transformer install dependencies and use:
 
-'python '
+```python FullTransformer_MNIST.py```
