@@ -539,7 +539,7 @@ optimizer = torch.optim.Adam(transformer.parameters(), lr = lr)
 name = 'CorrectedTransformer_MNIST_500Exs_150E_lr=0.0001'
 #wandb.init(project='Transformer', name=name)
 
-for epoch in range(100):
+for epoch in range(15):
 
   train_loss_epoch = 0
 
