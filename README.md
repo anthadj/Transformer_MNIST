@@ -89,13 +89,3 @@ python example2-MNIST_Transformer.py
 ```
 
 Ensure that your token_feature_dim matches the encoder input’s last dimension. 
-
-
-
-
-
-
-
-
-
-
