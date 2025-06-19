@@ -1,4 +1,4 @@
-# 🚀 Transformer_AH
+# Transformer_AH
 
 A custom Transformer model implemented in PyTorch, designed for flexibility in encoder-decoder architectures.  
 Includes separate modules for:
@@ -12,12 +12,12 @@ Supports easy switching between encoder-only, decoder-only, and full transformer
 
 ## 📂 Example files
 
-✅ **`example1-Simple_Initiation.py`**  
+**`example1-Simple_Initiation.py`**  
 A minimal example showing how to:
 - Instantiate the model
 - Run data through encoder, decoder, or full transformer modes
 
-✅ **`example2-MNIST_Transformer.py`**  
+**`example2-MNIST_Transformer.py`**  
 A more complete example where:
 - MNIST image data is processed
 - The transformer model is trained on MNIST as input
@@ -45,9 +45,10 @@ model = Transformer_AH(
 )
 
 ## Instantiate the model
-python
-Copy
-Edit
+
+```
+
+
 from transformer_ah import Transformer_AH
 
 model = Transformer_AH(
@@ -65,11 +66,14 @@ model = Transformer_AH(
     comb_layers=2
 )
 
+```
+
+
 
 ## Run encoder, decoder, or transformer modes
-python
-Copy
-Edit
+
+```
+
 import torch
 
 # Example encoder input: (batch_size, seq_len, token_feature_dim)
@@ -86,23 +90,24 @@ dec_out = model(dec_in=dec_in, mode="decoder")
 
 # Full transformer
 full_out = model(enc_in=enc_in, dec_in=dec_in, mode="transformer")
+
+```
+
+
 Example commands
 Run the simple initiation example:
 
-bash
-Copy
-Edit
+```
 python example1-Simple_Initiation.py
+```
+
 Run the MNIST transformer example:
 
-bash
-Copy
-Edit
+```
 python example2-MNIST_Transformer.py
-Notes
-Ensure that your encoder input’s last dimension matches token_feature_dim.
+```
 
-Decoder inputs must contain token indices in the range [0, vocab_size - 1].
+Ensure that your token_feature_dim matches the encoder input’s last dimension. 
 
 
 
