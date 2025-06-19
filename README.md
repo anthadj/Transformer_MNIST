@@ -10,7 +10,7 @@ Supports easy switching between encoder-only, decoder-only, and full transformer
 
 ---
 
-## 📂 Example files
+## Example files
 
 **`example1-Simple_Initiation.py`**  
 A minimal example showing how to:
