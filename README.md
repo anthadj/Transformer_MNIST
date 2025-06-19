@@ -4,7 +4,7 @@ A custom Transformer model implemented in PyTorch, designed for flexibility in e
 Includes separate modules for:
 - Encoder
 - Masked decoder
-- Encoder-decoder cross-attention combiner
+- Transformer - Encoder-Masked decoder combiner
 
 Supports easy switching between encoder-only, decoder-only, and full transformer modes.
 
@@ -24,25 +24,6 @@ A more complete example where:
 - Demonstrates how to integrate the model into a training loop
 
 ---
-
-## How to use
-
-from transformer_ah import Transformer_AH
-
-model = Transformer_AH(
-    enc_emb_dim=128,
-    enc_heads=8,
-    enc_layers=2,
-    ff_dim=256,
-    token_feature_dim=196,
-    vocab_size=12,
-    dec_emb_dim=128,
-    dec_heads=8,
-    dec_layers=2,
-    transformer_emb_dim=128,
-    comb_heads=8,
-    comb_layers=2
-)
 
 ## Instantiate the model
 
